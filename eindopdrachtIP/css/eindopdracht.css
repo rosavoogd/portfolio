@@ -1,0 +1,121 @@
+
+/* border positie */
+main {
+  position: relative;
+  width: 480px;
+  height: 740px;
+  margin: auto;
+  display: block;
+  border: solid;
+  /* foto verdwijnt uit border */
+  overflow: hidden;
+}
+
+/* kader positie */
+section {
+  position: relative;
+  width: 350px;
+  height: 467px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: "Roboto", monospace;
+}
+
+/* foto positie */
+article.cat {
+  position: absolute;
+  width: 350px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  display: block;
+  border: solid;
+  /* animatie */
+  transition: .5s;
+  transition-timing-function: ease-in;
+}
+
+ /* plaatjes staan over elkaar heen */
+article.cat:nth-of-type(1) {
+  z-index: 10;
+  transform: rotate(3deg);
+}
+
+article.cat:nth-of-type(2) {
+  z-index: 9;
+  transform: rotate(-2deg);
+}
+
+article.cat:nth-of-type(3) {
+  z-index: 8;
+  transform: rotate(2deg);
+}
+
+article.cat:nth-of-type(4) {
+  z-index: 7;
+  transform: rotate(-3deg);
+}
+
+article.cat:nth-of-type(5) {
+  z-index: 6;
+  transform: rotate(1deg);
+}
+
+article.cat:nth-of-type(6) {
+  z-index: 5;
+  transform: rotate(-1deg);
+}
+
+
+/* animatie */
+article.cat.gedisliked {
+  transform: translate(-470px, 30px) rotate(-10deg);
+}
+
+article.cat.geliked {
+  transform: translate(460px, 30px) rotate(10deg);
+}
+
+/* foto grootte */
+article.cat img {
+  width: 350px;
+  height: 467px
+}
+
+/* naam in t midden */
+article.cat h1 {
+  text-align: center;
+}
+
+/* like knop positie*/
+img.like {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 114px;
+  height: 100px;
+}
+
+/* dislike knop positie*/
+img.dislike {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+/* positie hartje */
+.hartje {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  z-index: 10;
+  
+}
+
+/* hartje onzichtbaar */
+.invisible {
+  display: none;
+}

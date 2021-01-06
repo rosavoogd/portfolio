@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+  <link rel="stylesheet" href="css/fd.css">
+  <link rel="icon" href="img/rosalogo.png">
+  <title>Portfolio Rosa</title>
+</head>
+
+<body>
+  <header>
+    <a href="fd.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="fd.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <!-- contact form bron: w3schools -->
+        <li class="contact">
+          <button id="myBtn" class="contactbtn">contact</button>
+          <div class="triangle"></div>
+          <form id="myContact" class="contact-content">
+            <h1>Hello! do you have any questions or requests?</h1>
+            <p> Feel free to send me a message!</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="yourname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="youremail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+            <fieldset>
+              <!-- bron: sanne -->
+              <legend>Service you're interested in?</legend>
+
+              <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
+              <label for="uxui">UX Design</label>
+
+              <input type="checkbox" name="service" id="frontend" value="frontend" class="visually-hidden">
+              <label for="frontend">Web Design</label>
+
+              <input type="checkbox" name="service" id="interaction" value="interaction" class="visually-hidden">
+              <label for="interaction">Interaction</label>
+
+              <input type="checkbox" name="service" id="branding" value="branding" class="visually-hidden">
+              <label for="branding">Branding</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- figure moet header worden en caption h1  -->
+    <figure>
+      <img src="img/bbw.jpg" alt="">
+      <figcaption>Bombardement op de Blauwburgwal <p>Dataweek</p>
+      </figcaption>
+    </figure>
+    <section lang="nl">
+      <h3>Project beschrijving </h3>
+      <p>Met het themasemester van Information Design hadden we in December 2020 een mini projectje
+        van een week lang waar we een datavisualisatie over een plek in Nederland moesten maken
+        waar een (interessant) verschijnsel te zien is. De visualisatie moest
+        een nieuw inzicht geven over de plek dat nog niet eerder in kaart is gebracht.
+        Dit project heb ik samen met Jonah Meijers gemaakt.
+      </p>
+
+      <h3>Deliverables</h3>
+      <ul>
+        <li>1 open dataset</li>
+        <li>1 zelfverzamelede dataset</li>
+        <li>Procesboek</li>
+      </ul>
+
+      <h3>Proces</h3>
+
+      <h4>Onderzoek</h4>
+      <p>Onderzocht welke bominslag het interessantste was om een verhaal over te vertellen.
+        Uiteindelijk de Blauwburgwal ontdekt, een heftige inslag met veel verhalen.</p>
+      <img class="proces" src="img/mapsdata.png" alt="">
+      <p>Na wat onderzoek van Jonah en mij online hebben we een website gevonden waar 6 maanden geleden een herdenking
+        was voor deze <a
+          href="https://www.notion.so/Dataweek-Blauwburgwal-Bombardement-817d51d00d474170b48cf76d13339184#295f3a61c8b04cd994c2ee27608b17ed">bominslag</a>.
+        Hier vonden wij een auteur (Fred Geukes Foppen) die de verhalen van slachtoffers en ooggetuigen samen heeft
+        gebracht in een boekje. Dit boekje hebben wij
+        gekocht en zijn wij de verhalen verder gaan lezen om op een verder idee te komen.
+        We zijn na de verhalen te hebben gelezen met z'n tweeën naar de Blauwburgwal gegaan om de plek te bekijken. We
+        hebben daar onze
+        eigen foto's gemaakt van hoe de plek er tegenwoordig uit ziet. Jonah kwam met het idee om een slider te maken
+        die eerst de oude foto van de Blauwburgwal laat zien en na het sliden de foto van het heden. </p>
+
+      <h4>Mijn bijdrage aan het project</h4>
+      <p>Voor de visuele elementen heb ik een antique lijst gekreerd waarin we de foto's weergeven.
+        Ook heb ik twee versies van map indicatoren gemaakt waar je op kan klikken voor de verhalen. </p>
+
+      <h3>Eindoplevering</h3>
+      <p>Uiteindelijk hebben we in een week dit ingeleverd. Als we meer tijd hadden gehad had het ons leuk geleken
+        om ook nog een kaart van verschillende bombardementen in Amsterdam te weergeven en dan uiteindelijk op die
+        van de Blauwburgwal in te zoomen. Ons eindcijfer was een 8,5.</p>
+      <iframe class="kat" src="https://dataweek.jonahgold.dev" width="500" height="780"></iframe>
+    </section>
+
+  </main>
+  <footer>
+
+    By Rosa Voogd © 2019. All rights reserved
+  </footer>
+  <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+  <link rel="stylesheet" href="css/fd.css">
+  <link rel="icon" href="img/rosalogo.png">
+  <title>Portfolio Rosa</title>
+</head>
+
+<body>
+  <header>
+    <a href="fd.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="fd.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <!-- contact form bron: w3schools -->
+        <li class="contact">
+          <button id="myBtn" class="contactbtn">contact</button>
+          <div class="triangle"></div>
+          <form id="myContact" class="contact-content">
+            <h1>Hello! do you have any questions or requests?</h1>
+            <p> Feel free to send me a message!</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="yourname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="youremail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+            <fieldset>
+              <!-- bron: sanne -->
+              <legend>Service you're interested in?</legend>
+
+              <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
+              <label for="uxui">UX Design</label>
+
+              <input type="checkbox" name="service" id="frontend" value="frontend" class="visually-hidden">
+              <label for="frontend">Web Design</label>
+
+              <input type="checkbox" name="service" id="interaction" value="interaction" class="visually-hidden">
+              <label for="interaction">Interaction</label>
+
+              <input type="checkbox" name="service" id="branding" value="branding" class="visually-hidden">
+              <label for="branding">Branding</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- figure moet header worden en caption h1  -->
+    <figure>
+      <img src="img/dpmockup.png" alt="">
+      <figcaption>RoadPlanner <p>Design Patterns - Jaar 2</p>
+      </figcaption>
+
+    </figure>
+    <section lang="nl">
+      <h3>Vak beschrijving </h3>
+      <p>Het vak DP zat heel erg samen met ons Project Web. Met het
+        prototype van Project Web moesten we bij DP wireflows maken en interactie
+        onderzoek doen. </p>
+
+      <h3>Deliverables</h3>
+      <ul>
+        <li>Multi-Device wireflows</li>
+        <li>Interactie onderzoek</li>
+        <li>2 Job Stories</li>
+      </ul>
+
+      <h3>Proces</h3>
+      <img class="padding" src="img/dp2b.png" alt="">
+      <p>Mijn eerste Job Story ging over hoe je opgeslagen routes makkelijk kan delen.
+        Hiervoor heb ik gekeken naar TripAdvisor, zij doen dit op een simpele en makkelijke manier en ze
+        geven de gebruiker genoeg verschillende opties om te delen. Het enige wat ik aan
+        hun methode heb veranderd is feedback toegevoegd als je de link kopieert en het deel
+        icoon vergroot.</p>
+      <img class="padding" src="img/dp2a.png" alt="">
+      <p>Mijn tweede Job Story ging over hoe je routes makkelijk kan opslaan en ook weer
+        terug kan vinden. Hiervoor heb ik gekeken naar Instagram, zij hebben een like en een save
+        optie, bij de save optie kan je deze ook nog in bepaalde mappen opslaan. het enige wat
+        ik hier niet fijn vond was dat je niet heel makkelijk bij je opgeslagen posts kan
+        komen, het is erg verborgen.
+      </p>
+
+
+      <h3>Eindoplevering</h3>
+      <p>Vanuit mijn Job Stories en onderzoek naar andere apps heb ik uiteindelijk
+        dit document opgesteld wat mijn ontwerp volledig uitlegd.</p>
+      <img src="img/EindopdrachtDP.png" alt="">
+
+
+
+    </section>
+  </main>
+  <footer>
+
+    By Rosa Voogd © 2019. All rights reserved
+  </footer>
+  <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>

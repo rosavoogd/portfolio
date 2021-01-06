@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+    <link rel="stylesheet" href="css/fd.css">
+    <link rel="icon" href="img/rosalogo.png">
+    <title>Portfolio Rosa</title>
+</head>
+
+<body>
+    <header>
+        <a href="fd.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="fd.html">work</a></li>
+                <li><a href="about.html">about</a></li>
+                <!-- contact form bron: w3schools -->
+                <li class="contact">
+                    <button id="myBtn" class="contactbtn">contact</button>
+                    <div class="triangle"></div>
+                    <form id="myContact" class="contact-content">
+                        <h1>Hello! do you have any questions or requests?</h1>
+                        <p> Feel free to send me a message!</p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="yourname" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="youremail" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+                        <fieldset>
+                            <!-- bron: sanne -->
+                            <legend>Service you're interested in?</legend>
+
+                            <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
+                            <label for="uxui">UX Design</label>
+
+                            <input type="checkbox" name="service" id="frontend" value="frontend"
+                                class="visually-hidden">
+                            <label for="frontend">Web Design</label>
+
+                            <input type="checkbox" name="service" id="interaction" value="interaction"
+                                class="visually-hidden">
+                            <label for="interaction">Interaction</label>
+
+                            <input type="checkbox" name="service" id="branding" value="branding"
+                                class="visually-hidden">
+                            <label for="branding">Branding</label>
+                        </fieldset>
+
+                        <input type="submit" name="submit" value="Send">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- figure moet header worden en caption h1  -->
+        <figure>
+            <img src="img/skip.png" alt="">
+            <figcaption>Tekeningen
+            </figcaption>
+        </figure>
+        <section lang="nl">
+
+            <h3>Motor sticker voor een vriend.</h3>
+            <img class="proces" src="img/skip.png" alt="">
+            <p class="proces">Dit is een sticker die ik voor een goed vriend van mij heb ontworpen voor zijn motor.
+                Hij wou graag iets om een lelijk plekje op zijn motor te bedekken en vroeg of ik iets kon ontwerpen.
+                Uiteindelijk hebben we voor een tekening van zijn twee honden gekozen.
+            </p>
+
+            <h3>Portret oefening</h3>
+            <img class="proces" src="img/portret.png" alt="">
+            <p class="proces">Ik wou een keer een portret uitproberen en dit was mijn eerste echte poging. Het is een
+                portret van actrice Logan Browning. Om dit te oefenen had ik een <a
+                    href="https://www.skillshare.com/classes/Illustrating-Expressive-Portraits-in-Procreate/1734728719/projects?via=watch-history">Skillshare
+                    tutorial</a> gevolgd van Maia Faddoul.
+            </p>
+
+            <h3>Planten serie</h3>
+            <img class="proces" src="img/plant1.png" alt="">
+            <img class="proces" src="img/plant2.png" alt="">
+            <img class="proces" src="img/plant3.png" alt="">
+            <img class="proces" src="img/plant4.png" alt="">
+            <img class="proces" src="img/plant5.png" alt="">
+            <p class="proces">
+            </p>
+
+        </section>
+
+    </main>
+    <footer>
+
+        By Rosa Voogd © 2019. All rights reserved
+    </footer>
+    <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>

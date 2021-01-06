@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+  <link rel="stylesheet" href="css/fd.css">
+  <link rel="icon" href="img/rosalogo.png">
+  <title>Portfolio Rosa</title>
+</head>
+
+<body>
+  <header>
+    <a href="fd.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="fd.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <!-- contact form bron: w3schools -->
+        <li class="contact">
+          <button id="myBtn" class="contactbtn">contact</button>
+          <div class="triangle"></div>
+          <form id="myContact" class="contact-content">
+            <h1>Hello! do you have any questions or requests?</h1>
+            <p> Feel free to send me a message!</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="yourname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="youremail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+            <fieldset>
+              <!-- bron: sanne -->
+              <legend>Service you're interested in?</legend>
+
+              <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
+              <label for="uxui">UX Design</label>
+
+              <input type="checkbox" name="service" id="frontend" value="frontend" class="visually-hidden">
+              <label for="frontend">Web Design</label>
+
+              <input type="checkbox" name="service" id="interaction" value="interaction" class="visually-hidden">
+              <label for="interaction">Interaction</label>
+
+              <input type="checkbox" name="service" id="branding" value="branding" class="visually-hidden">
+              <label for="branding">Branding</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- figure moet header worden en caption h1  -->
+    <figure>
+      <img src="img/ia.png" alt="">
+      <figcaption>Foodtruckbooking <p>Informatie Architectuur</p>
+      </figcaption>
+    </figure>
+    <section lang="nl">
+      <h3>Vak beschrijving </h3>
+      <p>Tijdens het vak Informatie Architectuur leerde ik hoe ik informatie en
+        functies van een app of website het beste kon structureren en vindbaar
+        kon maken. Met de verschillende ontwerpstratedieën die ik heb geleerd
+        heb ik uiteindelijk de Foodtruckbooking case gekozen om te verbeteren.</p>
+
+      <h3>Deliverables</h3>
+      <ul>
+        <li>3 team oefeningen</li>
+        <li>Eind Ontwerpopdracht (twee gesprekken)</li>
+      </ul>
+
+      <h3>Eindoplevering</h3>
+
+      <h4>Overzichtdiagram</h4>
+      <p>Het Overzichtsdiagram geeft weer hoe de app gestructureerd is.
+        Het laat zien welke paginas er zijn en hoe je deze kan bereiken.
+      </p>
+      <img class="proces" src="img/ftdiagram.png" alt="">
+
+      <h4>Homepagina</h4>
+      <p>De homepagina brengt de belangrijkste data naar voren zodat je meteen
+        ziet wanneer je komende afspraken plaats vinden.</p>
+      <img class="proces" src="img/homepage.png" alt="">
+
+      <h4>Overzicht</h4>
+      <p>Bij 'Mijn Overzicht' krijg je te zien wanneer jouw foodtrucks
+        geboekt zijn en of je nog aanvragen hebt. Ook vind je er foodtrucks
+        die je zelf hebt geboekt. </p>
+      <img class="proces" src="img/overzicht.png" alt="">
+
+      <h4>Foodtrucks beheren</h4>
+      <p>Het beheren van de foodtrucks is te vinden bij 'Mijn Foodtrucks' hier
+        kan je foodtrucks toevoegen, verwijderen en bewerken. </p>
+      <img class="proces" src="img/beheren1.png" alt="">
+      <img class="proces" src="img/beheren2.png" alt="">
+
+      <h4>Foodtrucks vinden</h4>
+      <p>Je hebt de keuze om verschillende categorieën te selecteren en
+        zo de foodtruck die je zoekt te vinden. Alle categorieën zijn
+        optioneel, je kan ook puur zoeken naar een specifieke foodtruck
+        als je deze al kent via de zoekbalk. </p>
+      <img class="proces" src="img/vinden.png" alt="">
+
+      <h4>Foodtrucks boeken</h4>
+      <p>Bij het boeken van de foodtruck kan je eerst kijken naar
+        alle specificaties van de foodtruck en of deze beschikbaar is
+        op jouw gekozen data. Als je deze eenmaal hebt toegevoegd aan jouw
+        winkelwagen krijg je in de winkelwagen de optie om nog een foodtruck
+        te boeken. </p>
+      <img class="proces" src="img/boeken.png" alt="">
+
+      <h4>Foodtrucks opslaan en terug vinden</h4>
+      <p>Als je een foodtruck hebt opgeslagen kan je deze gemakkelijk weer
+        terug vinden bij jouw favorieten. Ook kan je eerder geboekte
+        foodtrucks hier weer terug vinden.</p>
+      <img class="proces" src="img/opslaan.png" alt="">
+
+      <h3>Conclusie</h3>
+      <p>Met dit vak heb ik een heleboel geleerd en ik zie in hoe ik nu mijn
+        ontwerpen anders kan doen om het steeds meer te verbeteren. Zelf ben ik
+        erg ontevreden hoe ik dit vak heb afgerond. Als ik iets zou verbeteren zou
+        dat zeker de vormgeving van de app zijn.</p>
+
+
+    </section>
+
+  </main>
+  <footer>
+
+    By Rosa Voogd © 2019. All rights reserved
+  </footer>
+  <script src="js/fd.js" charset="utf-8">
+  </script>
+</body>
+
+</html>
