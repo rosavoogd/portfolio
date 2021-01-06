@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+  <link rel="stylesheet" href="css/fd.css">
+  <link rel="icon" href="img/rosalogo.png">
+  <title>Portfolio Rosa</title>
+</head>
+
+<body>
+  <header>
+    <a href="fd.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="fd.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <!-- contact form bron: w3schools -->
+        <li class="contact">
+          <button id="myBtn" class="contactbtn">contact</button>
+          <div class="triangle"></div>
+          <form id="myContact" class="contact-content">
+            <h1>Hello! do you have any questions or requests?</h1>
+            <p> Feel free to send me a message!</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="yourname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="youremail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+            <fieldset>
+              <!-- bron: sanne -->
+              <legend>Service you're interested in?</legend>
+
+              <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
+              <label for="uxui">UX Design</label>
+
+              <input type="checkbox" name="service" id="frontend" value="frontend" class="visually-hidden">
+              <label for="frontend">Web Design</label>
+
+              <input type="checkbox" name="service" id="interaction" value="interaction" class="visually-hidden">
+              <label for="interaction">Interaction</label>
+
+              <input type="checkbox" name="service" id="branding" value="branding" class="visually-hidden">
+              <label for="branding">Branding</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- figure moet header worden en caption h1  -->
+    <figure>
+      <img src="img/langefrans.png" alt="">
+      <figcaption>Verhalen Vormgeven <p>Vormgeving 2 - Jaar 2</p>
+      </figcaption>
+    </figure>
+    <section lang="nl">
+      <h3>Vak beschrijving </h3>
+      <p>Voor het vak Vormgeving 2 was het doel om aan 3 verhalen van Max
+        Molovich een bepaalde vormgeving toe te voegen. Bij de 3 verhalen
+        koos je 3 sfeerwoorden die de sfeer van het verhaal toonde en hiervoor
+        moesten we visual research doen en daaruit ontstonden onze verhalen.</p>
+
+      <h3>Deliverables</h3>
+      <ul>
+        <li>3 eigen verhalen vormgeven</li>
+        <li>Website ontwerpen in de HvanA huisstijl</li>
+        <li>Responsive ontwerp</li>
+      </ul>
+
+      <h3>Proces</h3>
+      <h4>Visual Research</h4>
+      <img src="img/verwardeman.png" alt="">
+      <p>Mijn eerste verhaal was De verwarde man, hiervoor heb ik het
+        sfeerwoord Chaotisch gekozen. Iets dat chaotisch, helemaal doorelkaar en
+        eigenlijk niet goed te lezen is.</p>
+      <img src="img/langefransvr.png" alt="">
+      <p>Mijn tweede verhaal was Lange Frans, dit verhaal had veel ritme daarom
+        heb ik voor Ritmisch als sfeerwoord gekozen, een golvend verhaal.</p>
+      <img src="img/telegrafisch.png" alt="">
+      <p>Mijn derde verhaal was Telegrafisch. Een kort verhaal, erg minimalistisch
+        verteld. Door simpele vormen en letters zie je het verhaal.</p>
+
+      <h4>Eigen verhalen</h4>
+      <img class="padding" src="img/lfgif.gif" alt="">
+      Voor Lange Frans heb ik golvende voren en letters gebruikt om het verhaal
+      te vertellen.
+      <img class="padding" src="img/telgif.gif" alt="">
+      Voor Telegrafisch heb ik de letters erg minimalistich gehouden en met maar
+      1 echte ronde vorm en 2 kleuren gewerkt.
+
+      <h3>Eindoplevering</h3>
+      <img src="img/v2eind.png" alt="">
+      <p> <i>HvanA huisstijl web formaat</i></p>
+      <img src="img/v2eind4.png" alt="">
+      <p><i>HvanA huisstijl tablet formaat</i></p>
+      <img src="img/v2eind3.png" alt="">
+      <p><i>HvanA huisstijl mobiel formaat</i></p>
+
+
+
+    </section>
+  </main>
+  <footer>
+
+    By Rosa Voogd © 2019. All rights reserved
+  </footer>
+  <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,591 @@
+*,
+*::before,
+*::after {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #EE7349;
+  outline: none;
+}
+
+/**********/
+/* HEADER */
+/**********/
+img#logo {
+  width: 150px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header li a {
+  margin: 1em;
+}
+
+/********/
+/* FORM */
+/********/
+/* bron:w3schools */
+.contact {
+  position: relative;
+  display: inline-block;
+}
+
+.contactbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  top: -1px;
+}
+
+.contactbtn:hover,
+.contactbtn:focus {
+  color: #EE7349;
+}
+
+/* CONTACT FORM INHOUD POSITIONEREN  */
+.contact-content {
+  display: none;
+  position: absolute;
+  left: -220px;
+  top: 32px;
+  background-color: #EE7349;
+  width: 283px;
+  padding: 1.5em;
+  overflow: auto;
+  box-shadow: 6px 8px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Z-INDEX ZET HET ELEMENT NAAR VOREN */
+.show .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1003;
+}
+
+/* DRIEHOEKJE ALS VISUEEL DETAIL */
+.show .triangle {
+  /* bron: css-tricks */
+  position: absolute;
+  top: 18px;
+  left: -9px;
+  width: 0;
+  border-left: 44px solid transparent;
+  border-right: 44px solid transparent;
+  border-bottom: 20px solid #EE7349;
+}
+
+form>h1 {
+  font-size: 20px;
+  color: white;
+}
+
+form p {
+  color: white;
+  margin-top: 0em;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset input {
+  line-height: 1em;
+}
+
+legend {
+  color: white;
+  padding-bottom: .7em;
+  padding-top: .8em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  background-color: white;
+}
+
+input[type=text]:focus,
+input[type=checkbox]:focus+label {
+  outline: 1px dotted black;
+}
+
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  width: 100px;
+  margin-top: 2em;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* CHECKBOX STYLING */
+input[type="checkbox"]+label {
+  /* bron: sanne */
+  display: inline;
+  line-height: 2em;
+  padding: .5em;
+  color: white;
+  box-shadow: inset 0 -2px 0 white;
+  margin-right: 1.5em;
+}
+
+input[type="checkbox"]:checked+label {
+  /* bron: sanne */
+  color: black;
+  box-shadow: inset 0 -2px 0 black;
+}
+
+input:focus {
+  /* bron: sanne */
+  outline: 1px dotted black;
+}
+
+label {
+  font-size: 16px;
+  padding: .2em;
+  width: 100%;
+  display: block;
+  color: white;
+}
+
+/********/
+/* MAIN */
+/********/
+main h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: blenny, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+}
+
+/********/
+/* GRID */
+/********/
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: grid;
+}
+
+main>ul>li>a {
+  display: block;
+  position: relative;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* TRANSPARANTE OVERLAY MET TEKST */
+main>ul>li>a>div {
+  /* bron: sanne */
+  position: absolute;
+  background-color: rgba(238, 115, 73, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+  transition: .1s;
+}
+
+/* LAAT OVERLAY ZIEN */
+main>ul>li:hover>a>div,
+main>ul>li>a:focus>div {
+  opacity: 1;
+  transition: .3s;
+}
+
+main>ul>li>a>div h2 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+main>ul>li>a>div>h3 {
+  font-size: .9em;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+
+main>ul>li>a>div p {
+  margin: 0;
+  padding: .5em;
+}
+
+main>ul>li>a>img {
+  width: 100%;
+}
+
+/* SLEEPBOT PAGINA TEKST EN VIDEO CENTREREN EN RESPONSIVE */
+section {
+  max-width: 50em;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+section ul {
+  list-style: circle;
+  text-align: left;
+  display: block;
+  padding-left: 1em;
+}
+
+h3 {
+  text-align: left;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+img.me {
+  float: left;
+  max-width: 50%;
+}
+
+.padding {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+main h2 {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 0;
+  font-size: 35px;
+  font-weight: 400;
+  color: #EE7349;
+}
+
+main h3 {
+  font-weight: 800;
+  color: #EE7349;
+}
+
+main h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main p {
+  font-size: 14px;
+}
+
+p.about {
+  padding-left: 55%;
+}
+
+main>div p {
+  text-align: center;
+}
+
+main>div>h2 {
+  padding-bottom: 0;
+}
+
+/* SLEEPBOT PAGINA HEADER FOTO EN TEKST */
+figure {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 15em;
+  overflow: hidden;
+}
+
+figure img {
+  display: block;
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 100%;
+}
+
+/* SLEEPBOT PAGINA FOTO EN TEXT OVERLAY */
+figcaption {
+  /* bron: sanne */
+  font-size: 30px;
+  font-weight: 800;
+  padding: 3em;
+  color: white;
+  background-color: rgba(238, 115, 73, .6);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+figcaption p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.proces {
+  max-width: 100%;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+iframe.kat {
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+iframe {
+  border: none;
+}
+
+/**********/
+/* VIDEO  */
+/**********/
+
+video {
+  width: 100%;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+  padding: 1em 0 1em 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #EE7349;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25px;
+  padding-top: 1em;
+} */
+/* FOOTER TO THE BOTTOM */
+/* bron: https://dev.to/selbekk/how-to-make-your-footer-stick-to-the-bottom-of-your-page-57k9 */
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/*********************/
+/* RESPONSIVE DESIGN */
+/*********************/
+@media screen and (min-width :36em) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header ul li {
+    font-size: 19.2px;
+  }
+
+  form p {
+    font-size: 16px
+  }
+
+  .contactbtn {
+    font-size: 19.2px;
+  }
+
+  .contact-content {
+    width: 300px;
+  }
+
+  .show .triangle {
+    top: 20px;
+    left: -3px;
+  }
+
+  main img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  main p,
+  section ul {
+    font-size: 17px;
+  }
+
+  input[type="checkbox"]+label {
+    margin-right: 0.5em;
+  }
+
+  legend {
+    font-size: 18px;
+  }
+
+  figcaption {
+    font-size: 40px;
+  }
+
+  figcaption p {
+    font-size: 28px;
+  }
+
+  p.about {
+    padding-left: 55%;
+  }
+}
+
+@media screen and (min-width :62.5em) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header ul li {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  img#logo {
+    width: 200px;
+  }
+
+  .contactbtn {
+    font-size: 24px;
+  }
+
+  .contact-content {
+    left: -140px;
+    top: 45px;
+    width: 350px;
+  }
+
+  .show .triangle {
+    top: 27px;
+    left: 5px;
+  }
+
+  main img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main h3 {
+    font-size: 26px;
+  }
+
+  main p,
+  section ul {
+    font-size: 20px;
+  }
+
+  input[type="checkbox"]+label {
+    margin-right: 2em;
+  }
+
+  legend {
+    font-size: 20px;
+  }
+
+  figcaption {
+    font-size: 44px;
+  }
+
+  figcaption p {
+    font-size: 32px;
+  }
+
+  p.about {
+    padding-left: 23em;
+  }
+}
+
+/**************************/
+/*  ACCESSIBILITY HIDDEN  */
+/**************************/
+.visually-hidden {
+  /* bron: a11y */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}

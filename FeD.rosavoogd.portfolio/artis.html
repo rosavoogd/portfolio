@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+  <link rel="stylesheet" href="css/fd.css">
+  <link rel="icon" href="img/rosalogo.png">
+  <title>Portfolio Rosa</title>
+</head>
+
+<body>
+  <header>
+    <a href="fd.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="fd.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <!-- contact form bron: w3schools -->
+        <li class="contact">
+          <button id="myBtn" class="contactbtn">contact</button>
+          <div class="triangle"></div>
+          <form id="myContact" class="contact-content">
+            <h1>Hello! do you have any questions or requests?</h1>
+            <p> Feel free to send me a message!</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="yourname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="youremail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+            <fieldset>
+              <!-- bron: sanne -->
+              <legend>Service you're interested in?</legend>
+
+              <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
+              <label for="uxui">UX Design</label>
+
+              <input type="checkbox" name="service" id="frontend" value="frontend" class="visually-hidden">
+              <label for="frontend">Web Design</label>
+
+              <input type="checkbox" name="service" id="interaction" value="interaction" class="visually-hidden">
+              <label for="interaction">Interaction</label>
+
+              <input type="checkbox" name="service" id="branding" value="branding" class="visually-hidden">
+              <label for="branding">Branding</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- figure moet header worden en caption h1  -->
+    <figure>
+      <img src="img/cmdaan.png" alt="">
+      <figcaption>Artis Stopmotion <p>CMD Aan</p>
+      </figcaption>
+    </figure>
+    <section lang="nl">
+      <h3>Project beschrijving </h3>
+      <p>Als start van de propedeuse hadden we de eerste week een teamopdracht
+        om elkaat wat beter te leren kennen. We moesten een minder populair beest
+        uit artis kiezen en hiervoor een stopmotion video maken die bezoekers zou
+        moeten aantrekken om naar het dier te komen kijken.</p>
+
+      <h3>Deliverables</h3>
+      <ul>
+        <li>Stopmotion video</li>
+      </ul>
+
+      <h3>Proces</h3>
+      <img src="img/team2.jpeg" alt="">
+      <p>We hebben samen onderzoek gedaan naar de Zuidelijke Hoornraaf. Het is
+        een interessante vogel die niet heel goed bekend is in Artis. Het leukste
+        wat we hadden ontdekt was dat deze vogel soms zijn eigen spiegelbeeld
+        aanvaalt als hij deze tegen komt. Vandaar dat onze stopmotion film vooral om
+        deze eigenschap draait. </p>
+      <img src="img/mirror.jpeg" alt="">
+      <p>We dachten hiervoor eerst een echte spiegel te gebruiken. Helaas ging
+        dat niet goed omdat je de camera in de spiegel kon zien. Uiteindeijk hebben we
+        daarom voor alluminiumfolie gekozen.</p>
+      <img src="img/team3.jpeg" alt="">
+      <p>Na alle voorbereiding en ons onderzoek hebben wij met z'n vieren
+        een hele dag getekend, foto's gemaakt en geëdit om tot ons eindproduct te komen.</p>
+      <img src="img/prijs.jpeg" alt="">
+      <p>We hebben zelfs de prijs voor Beste Stopmotion Techniek gewonnen!</p>
+
+      <h3>Eindoplevering</h3>
+
+
+      <iframe src="https://player.vimeo.com/video/288591752" width="640" height="360" allow="fullscreen" allowfullscreen>
+
+      </iframe>
+    </section>
+  </main>
+  <footer>
+
+    By Rosa Voogd © 2019. All rights reserved
+  </footer>
+  <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>
