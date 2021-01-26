@@ -9,8 +9,9 @@ body {
   margin: 0;
 }
 
-a {
+a:not(:hover) {
   text-decoration: none;
+  color: #EE7349;
 }
 
 a:hover,
@@ -23,7 +24,8 @@ a:focus {
 /* HEADER */
 /**********/
 img#logo {
-  width: 150px;
+  display: block;
+  width: 200px;
 }
 
 header {
@@ -38,6 +40,10 @@ nav ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+header li a:not(:hover) {
+  color: black;
 }
 
 header li a {
@@ -260,7 +266,8 @@ main>ul>li>a>img {
 }
 
 /* SLEEPBOT PAGINA TEKST EN VIDEO CENTREREN EN RESPONSIVE */
-section {
+section,
+article {
   max-width: 50em;
   padding: 1em;
   margin: 0 auto;
@@ -307,10 +314,12 @@ main h2 {
 main h3 {
   font-weight: 800;
   color: #EE7349;
+  text-align: center;
 }
 
 main h4 {
   font-size: 19px;
+  text-align: center;
 }
 
 h5 {
@@ -393,6 +402,13 @@ iframe.kat {
 
 iframe {
   border: none;
+}
+
+@media screen and (min-width: 60rem) {
+  main> :not(figure) img {
+    max-height: 80vh;
+    object-fit: contain;
+  }
 }
 
 /**********/
@@ -520,7 +536,7 @@ footer p {
   }
 
   img#logo {
-    width: 200px;
+    width: 250px;
   }
 
   .contactbtn {
@@ -588,4 +604,59 @@ footer p {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
   /* added line */
+}
+
+/********************/
+/*  CUSTOM LAYOUTS  */
+/********************/
+.horizontal-image-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  gap: 1em;
+}
+
+.horizontal-image-gallery img {
+  grid-column: span 1;
+}
+
+.section-grid {
+  display: grid;
+  column-gap: 1em;
+  row-gap: 2em;
+}
+
+.section-grid section {
+  margin: 0;
+  padding: 0;
+}
+
+.section-grid h4 {
+  margin-top: 0;
+}
+
+.section-grid p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 60rem) {
+  .horizontal-image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .horizontal-image-gallery> :not(img) {
+    grid-column: 1 / span 2;
+  }
+
+  .horizontal-image-gallery img:nth-of-type(odd):last-of-type {
+    grid-column: span 2;
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-grid h3 {
+    grid-column: span 2;
+  }
 }
