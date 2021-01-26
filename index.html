@@ -22,10 +22,10 @@
           <li><a href="index.html">portfolio</a></li>
           <li><a href="about.html">about</a></li>
           <!-- contact form bron: w3schools -->
-          <!-- <li class="contact">
+          <li class="contact">
             <button id="myBtn" class="contactbtn">contact</button>
             <div class="triangle"></div>
-            <form id="myContact" class="contact-content">
+            <form data-netlify method="POST" name="contact" id="myContact" class="contact-content">
               <h1>Hello! do you have any questions or requests?</h1>
               <p> Feel free to send me a message!</p>
               <label for="name">Name</label>
@@ -38,7 +38,7 @@
               <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
 
               <fieldset>
-               bron: sanne 
+                bron: sanne
                 <legend>Service you're interested in?</legend>
 
                 <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
@@ -59,7 +59,7 @@
 
               <input type="submit" name="submit" value="Send">
             </form>
-          </li> -->
+          </li>
         </ul>
       </nav>
 
