@@ -20,44 +20,46 @@
                 <li><a href="index.html">work</a></li>
                 <li><a href="about.html">about</a></li>
                 <!-- contact form bron: w3schools -->
-                <!-- <li class="contact">
-            <button id="myBtn" class="contactbtn">contact</button>
-            <div class="triangle"></div>
-            <form id="myContact" class="contact-content">
-              <h1>Hello! do you have any questions or requests?</h1>
-              <p> Feel free to send me a message!</p>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="yourname" required>
+                <li class="contact">
+                    <button id="myBtn" class="contactbtn">contact</button>
+                    <div class="triangle"></div>
+                    <form data-netlify method="POST" name="contact" id="myContact" class="contact-content">
+                        <h1>Hello! do you have any questions or requests?</h1>
+                        <p> Feel free to send me a message!</p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="yourname" required>
 
-              <label for="email">Email</label>
-              <input type="email" id="email" name="youremail" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="youremail" required>
 
-              <label for="message">Message</label>
-              <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
 
-              <fieldset>
-               bron: sanne 
-                <legend>Service you're interested in?</legend>
+                        <fieldset>
+                            <!-- bron: sanne -->
+                            <legend>Service you're interested in?</legend>
 
-                <input type="checkbox" name="service" id="uxui" value="uxui" class="visually-hidden">
-                <label for="uxui">UX Design</label>
+                            <input type="checkbox" name="service" id="uxui" value="uxui"
+                                class="visually-hidden"><label>UX
+                                Design</label>
 
-                <input type="checkbox" name="service" id="frontend" value="frontend" class="visually-hidden">
-                <label for="frontend">Web Design</label>
+                            <input type="checkbox" name="service" id="frontend" value="frontend"
+                                class="visually-hidden"><label>Web
+                                Design</label>
 
-                <input type="checkbox" name="service" id="interaction" value="interaction" class="visually-hidden">
-                <label for="interaction">Interaction</label>
+                            <input type="checkbox" name="service" id="interaction" value="interaction"
+                                class="visually-hidden"><label>Interaction</label>
 
-                <input type="checkbox" name="service" id="branding" value="branding" class="visually-hidden">
-                <label for="branding">Branding</label>
-
-
-              </fieldset>
+                            <input type="checkbox" name="service" id="branding" value="branding"
+                                class="visually-hidden"><label>Branding</label>
 
 
-              <input type="submit" name="submit" value="Send">
-            </form>
-          </li> -->
+                        </fieldset>
+
+
+                        <input type="submit" name="submit" value="Send">
+                    </form>
+                </li>
             </ul>
         </nav>
     </header>
