@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+    <link rel="stylesheet" href="css/fd.css">
+    <link rel="icon" href="img/rosalogotab.png">
+    <title>Portfolio Rosa</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+                <!-- contact form bron: w3schools -->
+                <li class="contact">
+                    <button id="myBtn" class="contactbtn">contact</button>
+                    <div class="triangle"></div>
+                    <form data-netlify method="POST" name="contact" id="myContact" class="contact-content">
+                        <h1>Hello! do you have any questions or requests?</h1>
+                        <p> Feel free to send me a message!</p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="yourname" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="youremail" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+                        <fieldset>
+                            <!-- bron: sanne -->
+                            <legend>Service you're interested in?</legend>
+
+                            <input type="checkbox" name="service" id="uxui" value="uxui"
+                                class="visually-hidden"><label>UX
+                                Design</label>
+
+                            <input type="checkbox" name="service" id="frontend" value="frontend"
+                                class="visually-hidden"><label>Web
+                                Design</label>
+
+                            <input type="checkbox" name="service" id="interaction" value="interaction"
+                                class="visually-hidden"><label>Interaction</label>
+
+                            <input type="checkbox" name="service" id="branding" value="branding"
+                                class="visually-hidden"><label>Branding</label>
+
+
+                        </fieldset>
+
+
+                        <input type="submit" name="submit" value="Send">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- figure moet header worden en caption h1  -->
+        <figure>
+            <img src="img/day2.png" alt="">
+            <figcaption>Illustrator
+            </figcaption>
+        </figure>
+        <article class="section-grid" lang="nl">
+            <h3>Playing with Illustrator</h3>
+            <section>
+                <h4>Day 1</h4>
+                <img src="img/day1.png" alt="">
+                <p>Gewerkt met de blend tool op de woorden.
+                </p>
+            </section>
+            <section>
+                <h4>Day 2</h4>
+                <img class="ai" src="img/day2.png" alt="">
+                <p class="proces">Gewerkt met transform en verschillende soorten lijnen op een cirkel.
+                </p>
+            </section>
+            <section>
+                <h4>Day 3</h4>
+                <img class="ai" src="img/day3.png" alt="">
+                <p class="proces">Gewerkt met de blend tool en replace tool met warp.
+                </p>
+            </section>
+            <section>
+                <h4>Day 4</h4>
+                <img class="ai" src="img/day4.png" alt="">
+                <p class="proces">Gewerkt met de blend tool en warp tool.
+                </p>
+            </section>
+            <section>
+                <h4>Day 5</h4>
+                <img class="ai" src="img/day5.png" alt="">
+                <p class="proces">Gewerkt met de blend tool en replace tool.
+                </p>
+            </section>
+            <section>
+                <h4>Day 6</h4>
+                <img class="ai" src="img/day6.png" alt="">
+                <p class="proces">Gewerkt met de blend tool en perspective.
+                </p>
+            </section>
+            <section>
+                <h4>Day 7</h4>
+                <img class="ai" src="img/day7.png" alt="">
+                <p class="proces">Gewerkt met de knife tool.
+                </p>
+            </section>
+            <section>
+                <h4>Day 8</h4>
+                <img class="ai" src="img/day8.png" alt="">
+                <p class="proces">Gewerkt met multiply effect op de iPad IA app.
+                </p>
+            </section>
+            <section>
+                <h4>Day 9</h4>
+                <img class="ai" src="img/day9.png" alt="">
+                <p class="proces">Gewerkt met Adobe Dimensions.
+                </p>
+            </section>
+            <section>
+                <h4>Day 10</h4>
+                <img class="ai" src="img/day10.png" alt="">
+                <p class="proces">Gewerkt met Procreate.
+                </p>
+            </section>
+            <h3>Graphic Design</h3>
+            <section>
+                <h4>ABC</h4>
+                <img class="ai" src="img/abc.png" alt="">
+                <p class="proces">Experimenteren met meerderen Illustrator functies
+                </p>
+            </section>
+            <section>
+                <h4>Graphic Poster</h4>
+                <img class="ai" src="img/teunis1.png" alt="">
+                <p class="proces">Elementen gecombineerd uit Figma, Blender, Illustrator en Photoshop
+                </p>
+            </section>
+            <section>
+                <h4>Graphic Poster</h4>
+                <img class="ai" src="img/teunis2.png" alt="">
+                <p class="proces">Elementen gecombineerd uit Figma, Blender, Illustrator en Photoshop
+                </p>
+            </section>
+            <section>
+                <h4>Graphic Poster</h4>
+                <img class="ai" src="img/teunis3.png" alt="">
+                <p class="proces">Elementen gecombineerd uit Figma, Blender, Illustrator en Photoshop
+                </p>
+            </section>
+        </article>
+
+    </main>
+    <footer>
+
+        By Rosa Voogd © 2019. All rights reserved
+    </footer>
+    <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>

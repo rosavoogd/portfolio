@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/rww2kmp.css">
+    <link rel="stylesheet" href="css/fd.css">
+    <link rel="icon" href="img/rosalogotab.png">
+    <title>Portfolio Rosa</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id=logo src="img/rosalogo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+                <!-- contact form bron: w3schools -->
+                <li class="contact">
+                    <button id="myBtn" class="contactbtn">contact</button>
+                    <div class="triangle"></div>
+                    <form data-netlify method="POST" name="contact" id="myContact" class="contact-content">
+                        <h1>Hello! do you have any questions or requests?</h1>
+                        <p> Feel free to send me a message!</p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="yourname" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="youremail" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="yourmessage" rows="5" cols="20" required></textarea>
+
+                        <fieldset>
+                            <!-- bron: sanne -->
+                            <legend>Service you're interested in?</legend>
+
+                            <input type="checkbox" name="service" id="uxui" value="uxui"
+                                class="visually-hidden"><label>UX
+                                Design</label>
+
+                            <input type="checkbox" name="service" id="frontend" value="frontend"
+                                class="visually-hidden"><label>Web
+                                Design</label>
+
+                            <input type="checkbox" name="service" id="interaction" value="interaction"
+                                class="visually-hidden"><label>Interaction</label>
+
+                            <input type="checkbox" name="service" id="branding" value="branding"
+                                class="visually-hidden"><label>Branding</label>
+
+
+                        </fieldset>
+
+
+                        <input type="submit" name="submit" value="Send">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- figure moet header worden en caption h1  -->
+        <figure>
+            <img src="img/empower.png" alt="">
+            <figcaption>EMPOWER 2.0 <p>Project Information Design</p>
+            </figcaption>
+        </figure>
+        <section lang="nl">
+            <h3>Project beschrijving </h3>
+            <p>Voor Project Information Design heb ik samen met <a href="jonahgold.dev">Jonah Meijers</a> en <a
+                    href="fleurvanson.com">Fleur van Son</a>
+                een toolkit ontworpen voor de opdrachtgever EMPOWER 2.0, deze toolkit is gemaakt voor beleidsmakers
+                om prosumers te worden op het gebied van hernieuwbare energie. Ons goal was om deze informatie op een
+                handige en logische manier visueel over te brengen.</p>
+
+            <h3>Deliverables</h3>
+            <ul>
+                <li>De toolkit</li>
+                <li>Fysiek element</li>
+                <li>Design Rationale</li>
+            </ul>
+
+            <h3>Proces</h3>
+
+            <h4>De toolkit</h4>
+            <p>Onze toolkit bestaat uit twee pagina's, de landingspagina geeft een kaart weer van alle
+                gemeenten van Nederland. </p>
+            <img class="proces" src="img/empower1.png" alt="">
+            <p> Je kan hier maximaal 3 gemeenten te selecteren die je op gebied van groene
+                energie productie kan gaan vergelijken, je wordt dan doorgestuurd naar de vergelijkings pagina waar je
+                informatie over de soorten en hoeveelheden energie kan vinden die de gemeente produceerd. Het doel van
+                deze pagina is ook om te kijken wat de ene gemeente anders doet dan de anderen en zo te kijken hoe je de
+                groene energie productie van een bepaalde gemeente kan verbeteren.</p>
+            <img class="full_width" src="img/comparepage.png" alt="">
+
+            <h4>Fysieke Element</h4>
+            <p>Voor het fysieke element moesten we iets maken dat bij het digitale product past. Wij hadden bedacht om
+                een voordeur bordje en sleutelhanger te maken waarmee je kon aangeven dat jij door de toolkit van
+                EMPOWER 2.0 meer groene energie bent gaan produceren.</p>
+            <article class="section-grid" lang="nl">
+                <img class="proces" src="img/fysiek1.jpg" alt="">
+                <img class="proces" src="img/fysiek2.jpg" alt="">
+                <img class="proces" src="img/fysiek3.jpg" alt="">
+                <img class="proces" src="img/fysiek4.jpg" alt=""></article>
+
+
+            <h4>Mijn bijdrage aan het project</h4>
+            <p>Samen met Fleur heb ik de visuele kant van het project opgepakt, zoals alle kleuren, indelingen,
+                grafieken, iconen etc. En Jonah heeft ons ontwerp in elkaar gecodeerd. Ik heb
+                ook het fysieke product ontworpen en gemaakt in het Makers Lab van de HvA. En ik heb ons hele proces
+                vastgelegd in onze Design Rationale. </p>
+
+            <h3>Eindoplevering</h3>
+            <p>Dit was een erg leuk project
+                om als team samen aan te werken. Het begin was erg lastig omdat er zo veel data was om te verwerken maar
+                uiteindelijk waren we op een goed idee gekomen en hebben we daar een mooie website bij opgeleverd waar
+                we alle 3 erg trots op zijn. Het prototype staat online en kan bekeken worden op <a
+                    href="https://empower.jonahgold.dev/"> empower.jonahgold.dev </a></p>
+
+        </section>
+
+    </main>
+    <footer>
+
+        By Rosa Voogd © 2019. All rights reserved
+    </footer>
+    <script src="js/fd.js" charset="utf-8"></script>
+</body>
+
+</html>

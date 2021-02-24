@@ -535,6 +535,15 @@ footer p {
   }
 }
 
+.social {
+  max-width: 60%;
+}
+
+.socialicons {
+  display: flex;
+  margin-left: 29em;
+}
+
 @media screen and (min-width :62.5em) {
   ul {
     grid-template-columns: repeat(3, 1fr);
